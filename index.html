@@ -12,6 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Moment JS Link-->
     <link rel="Moment" href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js">
+    <!--Font Awesome Link-->
+    <script src="https://kit.fontawesome.com/82a28eab44.js" crossorigin="anonymous"></script>
     <!--Google Fonts Link-->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <!--Homework-6 CSS Link-->
@@ -19,9 +21,71 @@
     <title>Weather Dashboard</title>
   </head>
   <body>
-    <header class="jumbotron">
+    <header class="jumbotron bg-dark">
         <h1 class="display-4">Weather Dashboard</h1>
-      </header>
+    </header>
+    <main class="container">
+      <div class="row">
+        <!-- Search box Area-->
+        <div class="col-4 bg-dark" id="searchBox">
+          <p class="search-header my-1" id="search">Search For A City:</p>
+          <div class="input-group mb-3">
+              <input id="city-input" type="text" class="form-control" placeholder="City Name" aria-label="City Name">
+              <div class="input-group-append">
+                  <button class="btn btn-primary" type="button" id="search-button">
+                      <i class="fas fa-city"></i>
+                  </button>
+              </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="row mr-0">
+              <div class="col-12 border border-dark m-3 rounded">
+                  <div class="row">
+                      <div class="col-12">
+                          <span id="city" class="city align-middle"></span>
+                          <img id="weatherIcon" src="placeholder" alt="">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12">
+                          <p id="temperature"></p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12">
+                          <p id="humidity"></p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12">
+                          <p id="windSpeed"></p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12">
+                          <p id="uvIindex"></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-12">
+                  <h3> Five Day Forecast</h3>
+              </div>
+          </div>
+          <div class="row" id="forecast">
+              <div class="col fiveDay bg-primary ml-3 mb-3 rounded"></div>
+              <div class="col fiveDay bg-primary ml-3 mb-3 rounded"></div>
+              <div class="col fiveDay bg-primary ml-3 mb-3 rounded"></div>
+              <div class="col fiveDay bg-primary ml-3 mb-3 rounded"></div>
+              <div class="col fiveDay bg-primary ml-3 mb-3 rounded"></div>
+          </div>
+      </div>
+      </div>
+      
+      
+    </main>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 

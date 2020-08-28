@@ -1,7 +1,14 @@
 .jumbotron {
     text-align: center;
-    background-color: rgb(51, 51, 51);
     color: white;
     font-family: 'Merriweather', serif;
 
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+#search {
+    color: white;
 }
