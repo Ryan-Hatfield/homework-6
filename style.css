@@ -9,6 +9,18 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+#mainContainer {
+    background-image: url('https://dv-website.s3.amazonaws.com/uploads/2019/05/jz_csweather_060619.jpg');
+}
+
 #search {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.fiveDay {
     color: white;
 }

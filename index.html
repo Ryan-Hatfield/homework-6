@@ -24,7 +24,7 @@
     <header class="jumbotron bg-dark">
         <h1 class="display-4">Weather Dashboard</h1>
     </header>
-    <main class="container">
+    <main class="container" id="mainContainer">
       <div class="row">
         <!-- Search box Area-->
         <div class="col-4 bg-dark" id="searchBox">
@@ -38,6 +38,7 @@
               </div>
           </div>
         </div>
+        <!--Current Day Forecast-->
         <div class="col-8">
           <div class="row mr-0">
               <div class="col-12 border border-dark m-3 rounded">
@@ -74,6 +75,7 @@
                   <h3> Five Day Forecast</h3>
               </div>
           </div>
+          <!--Five Day Forecast-->
           <div class="row" id="forecast">
               <div class="col fiveDay bg-primary ml-3 mb-3 rounded"></div>
               <div class="col fiveDay bg-primary ml-3 mb-3 rounded"></div>
@@ -94,6 +96,8 @@
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!--AJAX Moment JS -->>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!--Homework-6 JS link-->
     <script src="./script.js"></script>
   </body>
