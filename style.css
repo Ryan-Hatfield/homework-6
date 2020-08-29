@@ -1,26 +1,37 @@
 .jumbotron {
     text-align: center;
     color: white;
-    font-family: 'Merriweather', serif;
-
-}
-
-body {
-    font-family: 'Merriweather', serif;
-}
-
-#mainContainer {
-    background-image: url('https://dv-website.s3.amazonaws.com/uploads/2019/05/jz_csweather_060619.jpg');
 }
 
 #search {
     color: white;
 }
 
-h3 {
-    color: white;
+#mainContainer {
+    background-image: url('https://dv-website.s3.amazonaws.com/uploads/2019/05/jz_csweather_060619.jpg');
 }
+
 
 .fiveDay {
     color: white;
+}
+
+#currentWeather {
+    font-size: large;
+    color: white;
+}
+
+.city {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Merriweather', serif;
 }
