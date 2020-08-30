@@ -86,7 +86,37 @@ const APIKey = "8ef05f7cbf5c643b35bd7aeae8048157";
             uvIndex.innerHTML = "UV Index: ";
             uvIndex.append(uvi);
         });
-
+//---Setting up the API to to get the data from open weather map for foecast weather based on city selected
+        let cityID = response.data.id;
+        let forecastQueryURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID + "&appid=" + APIKey;
+        axios.get(forecastQueryURL)
+        .then(function(response){
+//---Display forecast for next 5 days underneath current conditions
+            console.log(response);
+            const forecast = document.querySelectorAll(".fiveDay");
+            for (i=0; i<forecast.length; i++) {
+                forecast[i].innerHTML = "";
+                const forecastIndex = i*8 + 4;
+                const forecastDate = new Date(response.data.list[forecastIndex].dt * 1000);
+                const forecastDay = forecastDate.getDate();
+                const forecastMonth = forecastDate.getMonth() + 1;
+                const forecastYear = forecastDate.getFullYear();
+                const foreDate = document.createElement("p");
+                foreDate.setAttribute("class","mt-3 mb-0");
+                foreDate.innerHTML = forecastMonth + "/" + forecastDay + "/" + forecastYear;
+                forecast[i].append(foreDate);
+                const forecastWeather = document.createElement("img");
+                forecastWeather.setAttribute("src","https://openweathermap.org/img/w/" + response.data.list[forecastIndex].weather[0].icon + ".png");
+                forecastWeather.setAttribute("alt",response.data.list[forecastIndex].weather[0].description);
+                forecast[i].append(forecastWeather);
+                const forecastTemp = document.createElement("p");
+                forecastTemp.innerHTML = "Temp: " + temperatureConv(response.data.list[forecastIndex].main.temp) + " &#176F";
+                forecast[i].append(forecastTemp);
+                const forecastHumidity = document.createElement("p");
+                forecastHumidity.innerHTML = "Humidity: " + response.data.list[forecastIndex].main.humidity + "%";
+                forecast[i].append(forecastHumidity);
+                }
+            })
         });  
     }
 
