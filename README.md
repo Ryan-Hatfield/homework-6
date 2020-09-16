@@ -36,6 +36,7 @@ https://ryan-hatfield.github.io/homework-6/
 
 ## Preview of Application.
 
+![image](https://user-images.githubusercontent.com/66077644/93399589-7f45ce80-f843-11ea-8e25-2c34ccaee191.png)
 
 
 ## Review
