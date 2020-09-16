@@ -40,15 +40,6 @@ https://ryan-hatfield.github.io/homework-6/
 ##
 ![image](https://user-images.githubusercontent.com/66077644/93399728-c633c400-f843-11ea-87a9-1327e7fc5183.png)
 
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-
 ## Contact Information
 
 Ryan Hatfield - hatfield086@gmail.com
