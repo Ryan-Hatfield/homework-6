@@ -5,9 +5,11 @@ This application allows the user to enter a city name and find out the current w
 forecast. The inputs are saved in local storage, this allows the user to see the searched cities when they
 return to the application.
 
+## Technologies Used
+This application is was created by using a CSS framework, JavaScript, JQuery, Server-Side and Third-Party
+APIs.
 
 ## User Story
-
 ```
 AS A traveler
 I WANT to see the weather outlook for multiple cities
